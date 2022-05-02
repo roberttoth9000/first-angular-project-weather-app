@@ -1,0 +1,21 @@
+.tile {
+  width: 400px;
+  height: 100px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 16px;
+  margin: 16px;
+}
+
+.city-and-country {
+  display: flex;
+  flex-direction: column;
+}
+
+.city-and-country,
+.celsius,
+.celsius-icon {
+  padding: 16px;
+}
