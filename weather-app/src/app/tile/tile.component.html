@@ -1,7 +1,7 @@
-<div class="tile">
+<div class="tile" *ngFor="let item of [].constructor(5); let i = index">
   <p class="city-and-country">
-    <span>City name</span>
-    <span>Country</span>
+    <span>{{ tileCityName[i] }}</span>
+    <span>{{ tileNation[i] }}</span>
   </p>
   <p class="celsius">Celsius</p>
   <div class="celsius-icon">Celsius icon</div>

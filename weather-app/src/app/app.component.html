@@ -1,1 +1,9 @@
-<app-tile *ngFor="let item of [].constructor(5)"></app-tile>
+<div class="search-placeholder">
+  <button for="search" (click)="getCityData(searchInput.value)">
+    get city weather
+  </button>
+  <input type="search" id="search" #searchInput />
+</div>
+<app-tile [tileNation]="nation" [tileCityName]="cityName"></app-tile>
+
+<!-- *ngFor="let item of [].constructor(5); let i = index" -->

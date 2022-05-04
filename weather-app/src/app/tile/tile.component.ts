@@ -1,15 +1,25 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-tile',
   templateUrl: './tile.component.html',
-  styleUrls: ['./tile.component.scss']
+  styleUrls: ['./tile.component.scss'],
 })
 export class TileComponent implements OnInit {
+  constructor() {}
+  @Input()
+  tileNation: string[] = [];
+  @Input()
+  tileCityName: string[] = [];
 
-  constructor() { }
+  tileCelsius: string = '';
+  tileIcon: string = '';
 
-  ngOnInit(): void {
-  }
-
+  cityData = {
+    tileCityName: [],
+    test2: '',
+    test3: '',
+    test4: '',
+  };
+  ngOnInit(): void {}
 }
